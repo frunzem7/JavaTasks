@@ -13,3 +13,6 @@ In case of the following actions throw exception and display informative message
 3. In case of 4 unsuccessful tries on number declaration – terminate user’s
    connection.
 4. Inserted value to top up the phone should be between 10 and 500.
+5. In case of 3 unsuccessful tries on amount declaration – terminate user’s
+      connection.
+6. All actions should be printed in console with the current time and action taken.

@@ -9,7 +9,7 @@ public class Main {
         Integer count = 0;
 
         while (true) {
-            System.out.println(LocalDateTime.now() + " Enter your phone number: ");
+            System.out.print(LocalDateTime.now() + " Enter your phone number: ");
             String numberPhone = sc.nextLine();
 
             if (numberPhone.matches("^(\\+373) \\d{2} \\d{6}")) {
@@ -19,7 +19,7 @@ public class Main {
             } else if (numberPhone.matches("^(\\+373) \\d{2} \\d{3}-\\d{3}")) {
                 break;
             } else {
-                System.out.println(LocalDateTime.now() + " This number is not valid! " +
+                System.out.print(LocalDateTime.now() + " This number is not valid! " +
                         "Try again, for ex: +373 60 066006, +(373)-79-85-85-85 or +373 79 666-999.");
             }
             count++;
@@ -33,7 +33,7 @@ public class Main {
         count = 0;
 
         while (true) {
-            System.out.println(LocalDateTime.now() + " Enter how much money you want to charge your phone: ");
+            System.out.print(LocalDateTime.now() + " Enter how much money you want to charge your phone: ");
             Float amount = sc.nextFloat();
 
             if (amount >= 10 && amount <= 500) {
